@@ -1,8 +1,8 @@
 # opreturnio
 Analytics on top of op_return data from the bitcoin blockchain
 
-# Data ingestion
-
+# Preparation
+## Bitcoin SQL DB Node Setup
 - create AWS EC2 instance
 - sudo apt-get update
 - sudo apt-get install postgresql postgresql-contrib
