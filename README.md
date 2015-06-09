@@ -18,11 +18,11 @@ wait 8-10 hours
 Get count of bitccoin transactions with OP_RETURN in output
 
 >bitcoin=\# SELECT count(tx_id) from txout where encode(pk_script,'hex') LIKE '6a%';
->
-> count
 
->\-------
+Alter table
 
-> 48535
+>ALTER TABLE txout ADD pk_script_string text;
 
->\(1 row\)
+Update table
+
+> UPDATE txout SET pk_script_string = encode(pk_script,'hex');
