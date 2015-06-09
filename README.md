@@ -20,6 +20,9 @@ Get count of bitccoin transactions with OP_RETURN in output
 >bitcoin=\# SELECT count(tx_id) from txout where encode(pk_script,'hex') LIKE '6a%';
 >
 > count
+
 >\-------
+
 > 48535
+
 >\(1 row\)
